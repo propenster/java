@@ -1,4 +1,3 @@
-package dev.java.propenster;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.LocalDateTime;

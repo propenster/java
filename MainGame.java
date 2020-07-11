@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Main{
+public class MainGame{
 	
 	/*
 		This Method takes a csv file path...as parameter
@@ -53,7 +53,7 @@ public static void main(String[] args)
 	{
 	    //Create an instance of the Project3 Class 
 		//To expose the convertToCsV method....
-		Main mainGameObj = new Main();
+		MainGame mainGameObj = new MainGame();
 		//Initialize necessary Global variables...
 		//And Objects...
 		Scanner input = new Scanner(System.in);
@@ -77,8 +77,8 @@ public static void main(String[] args)
 		System.out.println();
 		// String csvFile = "C:\\Users\\Win8\\Desktop\\propenster\\java\\dev\\countries.csv";
 		//Input .CSV File of African Countries...
- 		//String csvFile = "C:\\Users\\Win8\\Desktop\\propenster\\java\\dev\\african_countries.csv";
-        String csvFile = "african_countries.csv";
+ 		String csvFile = "C:\\Users\\Win8\\Desktop\\propenster\\african_countries.csv";
+       //String csvFile = "african_countries.csv";
 		Map<String, String> outFile = new HashMap<String, String>();
 		//outFile holds the HashMap obtained from coverting african_countries.csv
 		//to an Array of type HashMap...
@@ -106,7 +106,7 @@ public static void main(String[] args)
 			//Get user Input... and store it in userAnswer Type: String..
 			userAnswer = input.nextLine();
 			//Is the user-entered Answer Correct?
-			if(outFile.get(question).toLowerCase()).contains(userAnswer.toLowerCase())){
+			if(outFile.get(question).toLowerCase().contains(userAnswer.toLowerCase())){
 				System.out.println("Correct");
 				totalScore += 5;
 				rightAnswers++;

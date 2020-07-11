@@ -10,7 +10,7 @@ public class DataStructures{
 	public static void main(String[] args){
 
 	//Create an ArrayList Object of Type String....	
-	ArrayList <String> newList = new ArrayList<String>;
+	ArrayList <String> newList = new ArrayList<String>();
 	newList.add("David");
 	newList.add("Blessing");
 	newList.add("Josh");
@@ -29,7 +29,7 @@ public class DataStructures{
 	Collections.sort(newList);
 
 	//HashMap
-	HashMap <String, String> countryList = new HashMap<String, String>;
+	HashMap <String, String> countryList = new HashMap<String, String>();
 	countryList.add("USA", "Washington D.C");
 	countryList.add("U.A.E", "Dubai");
 	countryList.add("Nigeria", "Abuja");
@@ -50,22 +50,23 @@ public class DataStructures{
 
 	Enum Level = {ONE, TWO, THREE, FOUR};
 
-	Switch(Level):
-		case Level.ONE:
-			System.out.println("This is Level One");;
-			break;
-		case Level.TWO:
-			System.out.println("This is Level Two...Getting Tougher");
-			break;
-		case Level.THREE:
-			System.out.println("Getting very difficult to go through... Level Three is challenging");
-			break;
-		case Level.FOUR:
-			System.out.println("This Level Four is impossible");
-			break;
-		default:
-			System.out.println("Invalid Level...Selected");
+	Switch(Level){
+			case Level.ONE:
+				System.out.println("This is Level One");
 
+				break;
+			case Level.TWO:
+				System.out.println("This is Level Two...Getting Tougher");
+				break;
+			case Level.THREE:
+				System.out.println("Getting very difficult to go through... Level Three is challenging");
+				break;
+			case Level.FOUR:
+				System.out.println("This Level Four is impossible");
+				break;
+			default:
+				System.out.println("Invalid Level...Selected");
+		}
 
 	int [] newIntArray = new int[];
 	newIntArray[0] = 20;
